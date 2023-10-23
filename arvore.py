@@ -1,27 +1,26 @@
 import Draft, FreeCAD, math, random, Part,Arch, FreeCADGui
 
-interacao = 2
 
-diametro_tronco = 400
-taxa_reducao_tronco = 0.850
+interacao = 2				#Número de vezes que o algoritimo irá rodar (aumenta o numero de galhos)
 
-tamanho_tronco = 5000
-tam_max_ramos = 100
+diametro_tronco = 400		#Diâmetro inicial do tronco da vegetação
+taxa_reducao_tronco = 0.850 #taxa na qual os galhos reduzem seu diametro
 
-taxa_maxima_ramos = 70
-taxa_minima_ramos = 30
+tamanho_tronco = 5000		#Altura do tronco inicial (influencia na altura e numero de galhos)
+tam_max_ramos = 100			#Tamanho minimo dos galhos (influencia na quantidade de galhos)(controle sensível)
 
-angulo_minimo = 40
-angulo_maximo = 60
+taxa_maxima_ramos = 70		#Taxa máxima de redução do tamanho dos galhos (influencia na quantidade de galhos e folhas)(controle sensível)
+taxa_minima_ramos = 30		#Taxa minima de redução do tamanho dos galhos (influencia na quantidade de galhos e folhas)(controle sensível)
 
-angulo_torcao = 80
+angulo_minimo = 40			#Ângulo minimo entre os galhos (infliencia na forma da copa)
+angulo_maximo = 60			#Ângulo máximo entre os galhos (infliencia na forma da copa)
 
-tam_min_folhas = 600
-tam_max_folhas = 1500
+angulo_torcao = 80			#Angulo de torção dos galhos (infliencia na forma da copa)
 
-simetria_radial = 2
+tam_min_folhas = 600		#Tamanho minimo das folhas
+tam_max_folhas = 1500		#Tamanho máximo das folhas
 
-inclinação_max_tronco = 500
+inclinação_max_tronco = 500	#desvio máximo do tronco inicial em relação a vertical
 
 
 
